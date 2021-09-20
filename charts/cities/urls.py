@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include, include
+from .views import pie_chart
 
 app_name = 'cities'
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    path('pie_chart/', pie_chart, name='pie_chart'),
 
 ]
