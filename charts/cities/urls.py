@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include, include
-from .views import pie_chart
+from .views import pie_chart, pie_list
 
 app_name = 'cities'
 
 urlpatterns = [
     path('pie_chart/', pie_chart, name='pie_chart'),
+    path('pie_list/', pie_list, name='pie_list'),
 
 ]
